@@ -43,7 +43,9 @@ const UserSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', UserSchema);
 
-
+app.get('/', (req, res) => {
+    res.send('Hello from the server!');
+})
 // Register route (POST /register)
 app.post('/register', async (req, res) => {
     const { email, password,username } = req.body;
