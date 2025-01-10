@@ -26,7 +26,7 @@ const Auth = () => {
 
     try {
       // Sending a POST request to the backend API
-      const response = await axios.post('http://localhost:5000/login', {
+      const response = await axios.post('https://news-z2o7.onrender.com/login', {
         email,
         password,
       });
