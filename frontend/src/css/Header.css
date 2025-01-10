@@ -1,0 +1,137 @@
+/* Header.css */
+
+/* Header Navigation */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1f1f1f;  /* Dark Background */
+  color: #f39c12;  /* Text Color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  top: 0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Logo Section */
+.header-nav .logo-container h1 {
+  font-size: 28px;
+  color: #f39c12;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-nav .logo-container h1:hover {
+  color: #f39c12;
+}
+
+/* Navigation Links */
+.header-nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav .nav-link {
+  text-decoration: none;
+  color: #686161;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.header-nav .nav-link:hover {
+  color: #007BFF;
+}
+
+/* Search Bar */
+.header-nav .searchBar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-nav .searchBar input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.header-nav .searchBar input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.header-nav .search-btn {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.header-nav .search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Auth Container */
+.header-nav .auth-container {
+  position: relative;
+}
+
+.header-nav .auth-options {
+  display: flex;
+  gap: 15px;
+}
+
+.header-nav .auth-btn {
+  padding: 10px 15px;
+  border: 1px solid #007BFF;
+  background-color: transparent;
+  color: #007BFF;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.header-nav .auth-btn:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* User Dropdown */
+.header-nav .user-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 180px;
+  padding: 10px 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header-nav .dropdown-item {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #007BFF;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-nav .dropdown-item:hover {
+  background-color: #f0f0f0;
+  color: #0056b3;
+}
+
